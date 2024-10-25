@@ -1,47 +1,34 @@
-data:extend(
-{
-
+data:extend {
   {
     type = "recipe",
     name = "deep-underground-belt",
     enabled = false,
-    ingredients =
-    {
-      {"iron-plate", 10},
-      {"underground-belt", 1}
+    ingredients =     {
+      {type="item", name = "iron-plate", amount = 10},
+      {type="item", name = "underground-belt", amount = 1},
     },
-    result_count = 2,
-    result = "deep-underground-belt" 
+    results = {{type = "item", name = "deep-underground-belt", amount = 2}},
   },
 
   {
     type = "recipe",
     name = "deep-fast-underground-belt",
     enabled = false,
-    ingredients =
-    {
-      {"iron-plate", 10},
-      {"fast-underground-belt", 1}
+    ingredients = {
+      {type="item", name = "iron-plate", amount = 10},
+      {type="item", name = "fast-underground-belt", amount = 1},
     },
-    result_count = 2,
-    result = "deep-fast-underground-belt" 
+    results = {{type = "item", name = "deep-fast-underground-belt", amount = 2}},
   },
 
   {
     type = "recipe",
     name = "deep-express-underground-belt",
     enabled = false,
-    ingredients =
-    {
-      {"iron-plate", 10},
-      {"express-underground-belt", 1}
+    ingredients = {
+      {type="item", name = "iron-plate", amount = 10},
+      {type="item", name = "express-underground-belt", amount = 1},
     },
-    result_count = 2,
-    result = "deep-express-underground-belt" 
+    results = {{type = "item", name = "deep-express-underground-belt", amount = 2}},
   },
-
-})
-
-
-
- 
+}
