@@ -1,10 +1,10 @@
 {
-  "name": "deep-underground-belt",
+  "name": "deep-underground-belt-2",
   "version": "2.0.0",
-  "title": "Deep underground belt",
-  "author": "w1102",
+  "title": "Deep underground belt 2",
+  "author": "w1102, Rugal Bernstein",
   "factorio_version": "2.0",
-  "homepage": "https://mods.factorio.com/mod/deep-underground-belt",
+  "homepage": "https://mods.factorio.com/mod/deep-underground-belt-2",
   "dependencies": ["base >= 2.0"],
   "description": "Duplicate the underground belt entity to do 2 underground belts in one line"
 }
