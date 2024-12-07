@@ -2,7 +2,7 @@ data:extend{
   {
     type = "technology",
     name = "deep-underground-belt",
-    icon = "__deep-underground-belt__/graphics/icons/deep-underground-belt.png",
+    icon = "__deep-underground-belt-2__/graphics/icons/deep-underground-belt.png",
     icon_size = 64,
     effects =
       {
@@ -27,7 +27,7 @@ data:extend{
   {
     type = "technology",
     name = "deep-underground-belt-2",
-    icon = "__deep-underground-belt__/graphics/icons/deep-fast-underground-belt.png",
+    icon = "__deep-underground-belt-2__/graphics/icons/deep-fast-underground-belt.png",
     icon_size = 64,
     effects =
       {
@@ -52,7 +52,7 @@ data:extend{
   {
     type = "technology",
     name = "deep-underground-belt-3",
-    icon = "__deep-underground-belt__/graphics/icons/deep-express-underground-belt.png",
+    icon = "__deep-underground-belt-2__/graphics/icons/deep-express-underground-belt.png",
     icon_size = 64,
     effects =
       {
