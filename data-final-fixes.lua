@@ -79,7 +79,8 @@ for name, belt in pairs(data.raw["underground-belt"]) do
   if deep_entity.minable then
     deep_entity.minable.result = deep_name
   end
-  deep_entity.localised_name = {"", {"entity-name." .. name}, " (Deep)"}
+  local entity_base_name = belt.localised_name or {"entity-name." .. name}
+  deep_entity.localised_name = {"", entity_base_name, " (Deep)"}
   if distance_value > -1 then
     deep_entity.max_distance = distance_value
   end
@@ -98,7 +99,8 @@ for name, belt in pairs(data.raw["underground-belt"]) do
     local deep_item = util.table.deepcopy(source_item)
     deep_item.name = deep_name
     deep_item.place_result = deep_name
-    deep_item.localised_name = {"", {"item-name." .. name}, " (Deep)"}
+    local item_base_name = source_item.localised_name or {"item-name." .. name}
+    deep_item.localised_name = {"", item_base_name, " (Deep)"}
     deep_item.icons = build_deep_icons(source_item, DEEP_TINT)
     deep_item.icon = nil
     deep_item.icon_size = nil
@@ -120,7 +122,7 @@ for name, belt in pairs(data.raw["underground-belt"]) do
   local deep_recipe = {
     type = "recipe",
     name = deep_name,
-    localised_name = {"", {"item-name." .. name}, " (Deep)"},
+    localised_name = {"", item_base_name, " (Deep)"},
     enabled = recipe_enabled,
     ingredients = {
       {type = "item", name = "iron-plate", amount = RECIPE_IRON_COUNT},
