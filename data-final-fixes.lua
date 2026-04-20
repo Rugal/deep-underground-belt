@@ -79,8 +79,8 @@ for name, belt in pairs(data.raw["underground-belt"]) do
   if deep_entity.minable then
     deep_entity.minable.result = deep_name
   end
-  local entity_base_name = belt.localised_name or {"entity-name." .. name}
-  deep_entity.localised_name = {"", entity_base_name, " (Deep)"}
+  local base_name = belt.localised_name or {"entity-name." .. name}
+  deep_entity.localised_name = {"", base_name, " (Deep)"}
   if distance_value > -1 then
     deep_entity.max_distance = distance_value
   end
@@ -99,8 +99,7 @@ for name, belt in pairs(data.raw["underground-belt"]) do
     local deep_item = util.table.deepcopy(source_item)
     deep_item.name = deep_name
     deep_item.place_result = deep_name
-    local item_base_name = source_item.localised_name or {"item-name." .. name}
-    deep_item.localised_name = {"", item_base_name, " (Deep)"}
+    deep_item.localised_name = {"", base_name, " (Deep)"}
     deep_item.icons = build_deep_icons(source_item, DEEP_TINT)
     deep_item.icon = nil
     deep_item.icon_size = nil
