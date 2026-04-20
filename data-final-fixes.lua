@@ -122,7 +122,6 @@ for name, belt in pairs(data.raw["underground-belt"]) do
   local deep_recipe = {
     type = "recipe",
     name = deep_name,
-    localised_name = {"", item_base_name, " (Deep)"},
     enabled = recipe_enabled,
     ingredients = {
       {type = "item", name = "iron-plate", amount = RECIPE_IRON_COUNT},
